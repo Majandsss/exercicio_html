@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
+  <h1>Formulário de login</h1>
   <form>
     <label for="user" >Nome: </label>
     <input id="user" type="text" />
@@ -15,10 +17,14 @@
     <label for="email" >Email: </label>
     <input id="email" type="email" />
     <br />
-    <label for="senha">Senha: </label>
+    <label style="color: red;" for="senha">Senha: </label>
     <input id="senha" type="password" />
-    <button type="submit">
+    <br />
+    <button class="botaoenviar" type="submit">
       Cadastrar
+    </button>
+    <button class="botaoapagar" type="reset">
+      Apagar dados
     </button>
   </form>
 </body>
